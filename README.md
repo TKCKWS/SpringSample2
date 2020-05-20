@@ -1,0 +1,41 @@
+﻿# SpringSample2
+テストの勉強用
+- src
+    - main
+        - java.com.example.demo
+            - Application.java `Main Application Class`
+            - domain `ドメイン層`
+                - DatasourceConfig.java `データソースのコンフィグレーション`
+                - entity `エンティティクラス`
+                - repository `レポジトリクラス`
+                - service `ビジネスロジッククラス(インターフェイス)`
+                    - impl `ビジネスロジッククラス(実装)`
+            - external `外部層`
+                - service `外部層ビジネスロジッククラス(インターフェイス)`
+                    - impl `外部層ビジネスロジッククラス(実装)`
+            - web
+                - WebMvcConfig.java `WebMvcのコンフィグレーション`
+                - 各種Web層Config.java `各種Web層コンフィグレーション`
+                - advice `各種アドバイス`
+                    - CustomControllerAdvice.java
+                - interceptor `各種インターセプタ`
+                    - CustomHandlerInterceptor.java
+                - controller `各種コントローラ`
+                    - MemoController.java
+        - resources
+    - test
+        - java.com.example.demo
+            - domain `ドメイン層テスト`
+                 - DomainTestApplication.java  `ドメイン層テストのMain Application Class`
+                 - entity `entityテスト`
+                 - repository `レポジトリテスト`
+                 - service `ビジネスロジックテスト`
+                     - impl
+            - external `外部層テスト`
+                 - ExternalTestApplication.java  `外部層テストのMain Application Class`
+                 - service `外部層ビジネスロジックテスト`
+                     - impl
+            - web `Web層テスト`
+                 - WebTestApplication.java  `Web層テストのMain Application Class`
+                 - controller `コントローラテスト`
+        - resources
